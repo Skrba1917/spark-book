@@ -1,0 +1,88 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.0 (Amazon.com Inc. Java 11.0.17)
+[debug] Load.defaultLoad until apply took 180.479204ms
+[debug]           Load.loadUnit: plugins took 154.141022ms
+[debug]           Load.loadUnit: defsScala took 0.655034ms
+[debug] [Loading] Scanning directory /home/nenad/Desktop/scala-book/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/nenad/Desktop/scala-book/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 34.341302 ms
+[debug]               Load.resolveProject(scala-book-build) took 95.729064ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id scala-book-build, base: /home/nenad/Desktop/scala-book/project, plugins: List(<none>))) took 192.513026ms
+[debug] [Loading] Done in /home/nenad/Desktop/scala-book/project, returning: (scala-book-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 230.352306ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.518643ms
+[debug]         Load.loadUnit(file:/home/nenad/Desktop/scala-book/project/, ...) took 396.363313ms
+[debug]       Load.apply: load took 655.519205ms
+[debug]       Load.apply: resolveProjects took 10.997185ms
+[debug]       Load.apply: finalTransforms took 114.299572ms
+[debug]       Load.apply: config.delegates took 11.684294ms
+[debug]       Load.apply: Def.make(settings)... took 748.603986ms
+[debug]       Load.apply: structureIndex took 154.350431ms
+[debug]       Load.apply: mkStreams took 2.610196ms
+[info] loading project definition from /home/nenad/Desktop/scala-book/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 4775.757868ms
+[debug]     Load.loadUnit: defsScala took 0.005773ms
+[debug] [Loading] Scanning directory /home/nenad/Desktop/scala-book
+[debug]       Load.loadUnit: mkEval took 10.034825ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.935311 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 3.032819ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/nenad/Desktop/scala-book, plugins: List(<none>))) took 6.397211ms
+[debug] [Loading] Done in /home/nenad/Desktop/scala-book, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 4018.132359ms
+[debug]     Load.loadUnit: cleanEvalClasses took 7.451763ms
+[debug]   Load.loadUnit(file:/home/nenad/Desktop/scala-book/, ...) took 8803.390674ms
+[debug] Load.apply: load took 8855.147807ms
+[debug] Load.apply: resolveProjects took 0.12775ms
+[debug] Load.apply: finalTransforms took 17.0974ms
+[debug] Load.apply: config.delegates took 0.548004ms
+[debug] Load.apply: Def.make(settings)... took 157.737071ms
+[debug] Load.apply: structureIndex took 79.4555ms
+[debug] Load.apply: mkStreams took 0.004519ms
+[info] set current project to scala-book (in build file:/home/nenad/Desktop/scala-book/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/nenad/.sbt/1.0/server/874c3a67c2536ba7f4bb/sock
+[debug] Writing bsp connection file
+[info] started sbt server
